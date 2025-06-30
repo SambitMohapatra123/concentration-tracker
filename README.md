@@ -1,10 +1,10 @@
 # concentration-tracker
 The Concentration Tracker is a real-time system that uses MediaPipe and OpenCV to monitor focus by analyzing eye blinks, gaze direction, and head pose. It calculates a concentration score, shows it with a visual bar, and tracks distractions using facial landmarks from webcam input.
-# 🧠 Real-Time Concentration Tracker
+#  Real-Time Concentration Tracker
 
 The **Concentration Tracker** is an intelligent real-time system designed to monitor and analyze user attention levels through a standard webcam. It combines advanced computer vision techniques using **MediaPipe Face Mesh** and **OpenCV** to evaluate visual focus based on facial cues like eye activity, gaze direction, and head pose.
 
-## 🔍 Overview
+##  Overview
 This project aims to assess user concentration by:
 - Detecting eye blinks using **Eye Aspect Ratio (EAR)**
 - Tracking gaze using **iris landmarks**
@@ -14,20 +14,20 @@ This project aims to assess user concentration by:
 
 If the user consistently shows signs of distraction, the system activates a **distraction counter** and triggers alert logic when thresholds are crossed.
 
-## 💡 Key Features
-- 🎯 **Real-time Attention Scoring**  
+##  Key Features
+-  **Real-time Attention Scoring**  
   Calculates concentration score using weighted metrics.
 
-- 👀 **Blink & Gaze Detection**  
+-  **Blink & Gaze Detection**  
   Uses facial landmarks and iris position to monitor eye activity and gaze direction.
 
-- 🧭 **Head Pose Estimation**  
+-  **Head Pose Estimation**  
   Measures nose position relative to screen center to detect orientation.
 
-- 📊 **Smooth Scoring & Visualization**  
+-  **Smooth Scoring & Visualization**  
   Uses a moving average (deque) to stabilize score output; displays a progress bar with visual cues.
 
-- 🚨 **Distraction Alert System**  
+-  **Distraction Alert System**  
   Tracks periods of inattention and triggers reset or alert after defined limits.
 
 ## ⚙️ Technologies Used
@@ -38,7 +38,7 @@ If the user consistently shows signs of distraction, the system activates a **di
 | NumPy       | Mathematical operations (distances)      |
 | Python Deque| Smoothing score over time                |
 
-## 📦 Applications
+##  Applications
 - Online learning platforms (student focus monitoring)
 - Workplace productivity and screen time analytics
 - Driver alertness systems
